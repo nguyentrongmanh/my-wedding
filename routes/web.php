@@ -7,7 +7,7 @@ use App\Http\Controllers\WishController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/',
-    [WeddingController::class, 'invitation']
+    [WeddingController::class, 'index']
 )->name('home');
 
 Route::get('/invitation/{customer}', [WeddingController::class, 'invitation'])->name('invitation');
