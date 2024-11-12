@@ -6,9 +6,9 @@ use App\Http\Controllers\WeddingController;
 use App\Http\Controllers\WishController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('home2');
-});
+Route::get('/',
+    [WeddingController::class, 'invitation']
+)->name('home');
 
 Route::get('/invitation/{customer}', [WeddingController::class, 'invitation'])->name('invitation');
 
