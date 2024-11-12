@@ -458,8 +458,14 @@
         }
         @media (max-width: 767px) { 
             .guest {
-                top: 90px;
-                font-size: 11px;
+                top: 21%;
+                font-size: 0.85em;
+            }
+        }
+
+        @media (max-width: 380px) { 
+            .guest {
+                font-size: 0.8em !important;
             }
         }
     </style>
