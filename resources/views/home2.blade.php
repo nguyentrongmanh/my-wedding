@@ -69,7 +69,7 @@
                 </h3>
                 <div class="story-content">
                     <img src="{{ asset('images/wedding/invitation-card-sp.png') }}" class="story-img" alt="story-img">
-                    <div class="guest">Anh Trọng Thoát vị đĩa đệm</div>
+                    <div class="guest">QUÝ KHÁCH</div>
                 </div>
             </div>
         </section>
