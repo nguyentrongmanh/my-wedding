@@ -41,7 +41,7 @@
                 <tr class="border-t">
                     <td class="py-3 px-6 text-gray-800">{{ $customer->name }}</td>
                     <td class="py-3 px-6 text-gray-800">{{ $customer->nickname }}</td>
-                    <td class="py-3 px-6 text-gray-800"><a href="{{ $customer->invitation_url }}" >{{ $customer->invitation_url }}</a></td>
+                    <td class="py-3 px-6 text-gray-800"><a href="{{ $customer->invitation_url }}" target="_blank" >{{ $customer->invitation_url }}</a></td>
                     <td class="py-3 px-6 text-gray-800">{{ $customer->response }}</td>
                     <td class="py-3 px-6 text-center">
                         <a href="{{ route('customers.edit', $customer->id) }}" class="text-yellow-500 hover:text-yellow-700">Edit</a>

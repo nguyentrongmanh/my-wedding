@@ -1984,7 +1984,7 @@
 
     @media (max-width: 767px) {
         .ladi-section .ladi-container {
-            width: 420px;
+            width: 100vw;
         }
     }
 
@@ -2009,7 +2009,7 @@
 </style>
 <style id="style_element" type="text/css">
     #GALLERY340 {
-        width: 420px;
+        width: 100vw;
     }
 
     #GALLERY340 .ladi-gallery .ladi-gallery-view .ladi-gallery-view-arrow,
@@ -7461,7 +7461,7 @@
         }
         #GROUP364,
         #BOX349 {
-            width: 420px;
+            width: 100vw;
             height: 57px;
         }
         #GROUP364 {
@@ -7779,7 +7779,7 @@
         #PARAGRAPH407,
         #HEADLINE367,
         #PARAGRAPH366 {
-            width: 420px;
+            width: 100vw;
         }
         #PARAGRAPH407 {
             top: 90.5px;
@@ -8815,7 +8815,7 @@
             background-image: url("https://w.ladicdn.com/s768x480/5c728619c417ab07e5194baa/b84e4d98-cf14-47f3-b59b-8f00e52843cd-20240512200313-up8ae.jpg");
         }
         #IMAGE383 {
-            width: 420px;
+            width: 100vw;
             height: 480.944px;
         }
         #IMAGE383>.ladi-image>.ladi-image-background {
@@ -9063,7 +9063,7 @@
             height: 589.832px;
         }
         #IMAGE386 {
-            width: 420px;
+            width: 100vw;
             height: 589.832px;
         }
         #IMAGE386>.ladi-image>.ladi-image-background {
@@ -9089,7 +9089,7 @@
         }
         #GROUP426,
         #BOX385 {
-            width: 420px;
+            width: 100vw;
             height: 37px;
         }
         #GROUP426 {
@@ -9109,12 +9109,12 @@
         }
         #POPUP247,
         #POPUP342 {
-            width: 420px;
+            width: 100vw;
             height: 373px;
         }
         #IMAGE252,
         #IMAGE367 {
-            width: 420px;
+            width: 100vw;
             height: 372px;
         }
         #BOX253,

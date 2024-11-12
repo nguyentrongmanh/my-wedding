@@ -700,13 +700,13 @@
                                         <div id="GROUP444" class='ladi-element'>
                                             <div class='ladi-group'>
                                                 <div id="PARAGRAPH420" class='ladi-element'>
-                                                    <div class='ladi-paragraph'>11 GIỜ 30<br></div>
+                                                    <div class='ladi-paragraph'>09 GIỜ 30<br></div>
                                                 </div>
                                                 <div id="PARAGRAPH421" class='ladi-element'>
-                                                    <div class='ladi-paragraph'>29<br></div>
+                                                    <div class='ladi-paragraph'>08<br></div>
                                                 </div>
                                                 <div id="PARAGRAPH422" class='ladi-element'>
-                                                    <div class='ladi-paragraph'>( Nhằm ngày 24 tháng 05 năm Giáp Thìn )</div>
+                                                    <div class='ladi-paragraph'>( Nhằm ngày 8 tháng 11 năm Giáp Thìn )</div>
                                                 </div>
                                                 <div id="LINE347" class='ladi-element'>
                                                     <div class='ladi-line'>
@@ -714,10 +714,10 @@
                                                     </div>
                                                 </div>
                                                 <div id="PARAGRAPH423" class='ladi-element'>
-                                                    <div class='ladi-paragraph'>THỨ BẢY</div>
+                                                    <div class='ladi-paragraph'>CHỦ NHẬT</div>
                                                 </div>
                                                 <div id="PARAGRAPH424" class='ladi-element'>
-                                                    <div class='ladi-paragraph'>06 - 2024<br></div>
+                                                    <div class='ladi-paragraph'>12 - 2024<br></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -815,13 +815,13 @@
                                         <div id="GROUP438" class='ladi-element'>
                                             <div class='ladi-group'>
                                                 <div id="PARAGRAPH415" class='ladi-element'>
-                                                    <div class='ladi-paragraph'>11 GIỜ 30<br></div>
+                                                    <div class='ladi-paragraph'>09 GIỜ 30<br></div>
                                                 </div>
                                                 <div id="PARAGRAPH416" class='ladi-element'>
-                                                    <div class='ladi-paragraph'>30<br></div>
+                                                    <div class='ladi-paragraph'>08<br></div>
                                                 </div>
                                                 <div id="PARAGRAPH417" class='ladi-element'>
-                                                    <div class='ladi-paragraph'>( Nhằm ngày 25 tháng 05 năm Giáp Thìn )</div>
+                                                    <div class='ladi-paragraph'>( Nhằm ngày 08 tháng 11 năm Giáp Thìn )</div>
                                                 </div>
                                                 <div id="LINE345" class='ladi-element'>
                                                     <div class='ladi-line'>
@@ -832,7 +832,7 @@
                                                     <div class='ladi-paragraph'>CHỦ NHẬT<br></div>
                                                 </div>
                                                 <div id="PARAGRAPH419" class='ladi-element'>
-                                                    <div class='ladi-paragraph'>06 - 2024<br></div>
+                                                    <div class='ladi-paragraph'>11 - 2024<br></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -844,7 +844,7 @@
                                     </div>
                                 </div>
                                 <div id="HEADLINE402" class='ladi-element'>
-                                    <h3 class='ladi-headline ladi-transition'>Tại: Tư gia nhà Trai<br>Xóm 9, Diễn Thái, Diễn Châu, Nghệ An<br></h3>
+                                    <h3 class='ladi-headline ladi-transition'>Tại: Trung tâm tổ chức sự kiện - tiệc cưới <br> Phố Mới Tứ kỳ Hả Dương<br></h3>
                                 </div>
                                 <div id="HEADLINE403" class='ladi-element'>
                                     <h3 class='ladi-headline ladi-transition'>Sự hiện diện của quý khách là niềm vinh dự cho gia đình chúng tôi !<br></h3>
