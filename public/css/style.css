@@ -40,6 +40,15 @@ button#btn-submit-comment {
     background-color: #e6235b !important;
 }
 
+.accessibilities-section a {
+    border-color: #e55353 !important;
+    background: #e55353 !important;
+}
+
+.weddingdate-section .mini_calendar td #today {
+    background-color: #e75e5e !important;
+}
+
 /* .video-section {
     background-image: url('../images/wedding/wedding_event_background.JPG');
 }

@@ -30,7 +30,7 @@
                             src="{{ asset('images/wedding/qr_code/bride.png') }}">
                         <p class="mb-1">Ngân hàng: <strong>BIDV</strong></p>
                         <p class="mb-1">
-                            STK: <strong>2220694686</strong>
+                            STK: <strong>2220 6946 86</strong>
                         </p>
                         <p class="mb-1">
                             Tên TK: <strong>Phạm Thị Hiền</strong>
