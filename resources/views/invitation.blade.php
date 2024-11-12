@@ -98,7 +98,7 @@
                 <div id="section-comment">
                     <form action="" id="wish-form" class="p-4 contact-validation-active">
                         <input name="name" id="name-comment" type="hidden" class="form-control border-0"
-                            placeholder="Nhập tên của bạn*" />
+                            placeholder="Nhập tên của bạn*" value="{{ $customer->name }}" />
                         <input name="email" id="email-comment" type="hidden" class="form-control border-0"
                             placeholder="E-mail" />
                         <div class="col-auto mb-3">
@@ -250,24 +250,14 @@
                                 Một cuộc hôn nhân thành công đòi hỏi phải yêu nhiều lần
                             </p>
                         </div>
-                        <div class="box-comment pb-3">
-                            <h4 id="user-name-comment" class="mt-1">Bạn Vân vẫn độc thân</h4>
-                            <p id="comment-detail" class="m-0">
-                                Một cuộc hôn nhân thành công đòi hỏi phải yêu nhiều lần
-                            </p>
-                        </div>
-                        <div class="box-comment pb-3">
-                            <h4 id="user-name-comment" class="mt-1">Bạn Vân vẫn độc thân</h4>
-                            <p id="comment-detail" class="m-0">
-                                Một cuộc hôn nhân thành công đòi hỏi phải yêu nhiều lần
-                            </p>
-                        </div>
-                        <div class="box-comment pb-3">
-                            <h4 id="user-name-comment" class="mt-1">Bạn Vân vẫn độc thân</h4>
-                            <p id="comment-detail" class="m-0">
-                                Một cuộc hôn nhân thành công đòi hỏi phải yêu nhiều lần
-                            </p>
-                        </div>
+                        @foreach ($wishes as $wish)
+                            <div class="box-comment pb-3">
+                                <h4 id="user-name-comment" class="mt-1">{{ $wish->name }}</h4>
+                                <p id="comment-detail" class="m-0">
+                                    {{ $wish->content }}
+                                </p>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
         </section>
@@ -280,54 +270,7 @@
         </section>
     </div>
 
-    <div class="offcanvas offcanvas-end offcanvas-menu" tabindex="-1" id="offcanvasNavbar" data-bs-scroll="true"
-        data-bs-backdrop="true" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1">
-                <div class="offcanvas-header pb-4 pt-2 px-2 justify-content-end">
-                    <button type="button" class="btn-close p-0" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <li class="nav-item">
-                    <a class="section-sub-title nav-link active" aria-current="page" href="#video">Video Cưới</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="section-sub-title nav-link active" aria-current="page" href="#gallery">Album Hình
-                        Cưới</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="section-sub-title nav-link active" aria-current="page" href="#story">Chuyện tình
-                        yêu</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="section-sub-title nav-link active" aria-current="page" href="#invitation">Lời Ngỏ</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="section-sub-title nav-link" href="#event">Sự kiện cưới</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="section-sub-title nav-link" href="#couple">Cô Dâu &amp; Chú Rể</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="section-sub-title nav-link" href="#people">Phù Dâu &amp; Phù Rể</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="section-sub-title nav-link" href="#wishes">Sổ Lưu Bút</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="section-sub-title nav-link" href="#donate">Mừng cưới</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    @include('wedding-sections.menu')
 
     <div class="py-5 donate-section donate-modal section-bg-affect" id="donate-modal">
         <div class="container-fluid donate-modal-content">
@@ -344,8 +287,8 @@
                         <div class="donate-card p-4 rounded text-center">
                             <strong class="d-block sub-title mb-2 text-uppercase">Đến chú rể</strong>
                             <img class="qr-code-image m-auto mb-2"
-                                src="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/49bc348db7eb284d9fc249b9d958893b.jpeg">
-                            <p class="mb-1">Ngân hàng: <strong>VPBank</strong></p>
+                                src="{{ asset('images/wedding/qr_code/groom.png') }}">
+                            <p class="mb-1">Ngân hàng: <strong>Techcombank</strong></p>
                             <p class="mb-1">
                                 STK: <strong>12345678910</strong>
                             </p>
@@ -358,8 +301,8 @@
                         <div class="donate-card p-4 rounded text-center">
                             <strong class="d-block sub-title mb-2 text-uppercase">Đến cô dâu</strong>
                             <img class="qr-code-image m-auto mb-2"
-                                src="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/24343a45a211dedc5b1b0b57300eaba9.jpeg">
-                            <p class="mb-1">Ngân hàng: <strong>VPBank</strong></p>
+                                src="{{ asset('images/wedding/qr_code/bride.png') }}">
+                            <p class="mb-1">Ngân hàng: <strong>BIDV</strong></p>
                             <p class="mb-1">
                                 STK: <strong>12345678910</strong>
                             </p>

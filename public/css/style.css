@@ -36,6 +36,10 @@ body {
     background-color: #eebaba !important;
 }
 
+button#btn-submit-comment {
+    background-color: #e6235b !important;
+}
+
 /* .video-section {
     background-image: url('../images/wedding/wedding_event_background.JPG');
 }
