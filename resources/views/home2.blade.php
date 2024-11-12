@@ -443,32 +443,7 @@
     <script src="https://preview.iwedding.info/templates/template135/js/script.js"></script>
     <script src="https://preview.iwedding.info/common/emoji-picker/js/insertTextAtCursor.js?v=20241021"></script>
     <script type="module" src="https://preview.iwedding.info/common/emoji-picker/js/init.js?v=20241021"></script>
-    <style>
-        .story-content {
-            position: relative;
-        }
-
-        .guest {
-            position: absolute;
-            top: 150px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-weight: bold;
-            color: #751738;
-        }
-        @media (max-width: 767px) { 
-            .guest {
-                top: 21%;
-                font-size: 0.85em;
-            }
-        }
-
-        @media (max-width: 380px) { 
-            .guest {
-                font-size: 0.8em !important;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </body>
 
 </html>

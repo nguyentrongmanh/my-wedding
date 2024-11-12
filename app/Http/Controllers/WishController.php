@@ -29,7 +29,10 @@ class WishController extends Controller
      */
     public function store(StoreWishRequest $request)
     {
-        //
+        $data = $request->all();
+        $name = $data['name'];
+        Wish::create($request->all());
+        return response()->json(['message' => "Cám ơn $name đã gửi lời chúc đến chúng mình nhé!"], 201);
     }
 
     /**

@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('wishes', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('customer_id')->unsigned();
+            $table->string('name')->nullable();
+            $table->bigInteger('customer_id')->unsigned()->nullable();
             $table->string('title')->nullable();
             $table->text('content')->nullable();
             $table->timestamps();

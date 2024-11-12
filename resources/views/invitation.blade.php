@@ -92,20 +92,15 @@
                     Sổ Lưu Bút
                 </h2>
                 <h3 data-aos="fade-up" class="section-sub-title mb-4 text-center">
-                    Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng tôi!
+                    {{ $customer->name }} ơi, hãy gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của Mạnh & Hiền nhé
+                    &#10084;
                 </h3>
                 <div id="section-comment">
                     <form action="" id="wish-form" class="p-4 contact-validation-active">
-                        <div class="col-auto mb-3 d-flex">
-                            <div class="w-50 me-2">
-                                <input name="name" id="name-comment" type="text" class="form-control border-0"
-                                    placeholder="Nhập tên của bạn*" />
-                            </div>
-                            <div class="w-50 ms-2 ">
-                                <input name="email" id="email-comment" type="text" class="form-control border-0"
-                                    placeholder="E-mail" />
-                            </div>
-                        </div>
+                        <input name="name" id="name-comment" type="hidden" class="form-control border-0"
+                            placeholder="Nhập tên của bạn*" />
+                        <input name="email" id="email-comment" type="hidden" class="form-control border-0"
+                            placeholder="E-mail" />
                         <div class="col-auto mb-3">
                             <div class="textarea-emoji-picker position-relative">
                                 <div class="vitualTextarea form-control px-0">
@@ -440,35 +435,10 @@
     <script src="https://preview.iwedding.info/common/calendar.js?v=20241021"></script>
     <script src="https://preview.iwedding.info/common/biicommon.min.js?v=20241021"></script>
     <script src="https://preview.iwedding.info/templates/template135/js/libs.js"></script>
-    <script src="https://preview.iwedding.info/templates/template135/js/script.js"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
     <script src="https://preview.iwedding.info/common/emoji-picker/js/insertTextAtCursor.js?v=20241021"></script>
     <script type="module" src="https://preview.iwedding.info/common/emoji-picker/js/init.js?v=20241021"></script>
-    <style>
-        .story-content {
-            position: relative;
-        }
-
-        .guest {
-            position: absolute;
-            top: 150px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-weight: bold;
-            color: #751738;
-        }
-        @media (max-width: 767px) { 
-            .guest {
-                top: 21%;
-                font-size: 0.85em;
-            }
-        }
-
-        @media (max-width: 380px) { 
-            .guest {
-                font-size: 0.8em !important;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </body>
 
 </html>
