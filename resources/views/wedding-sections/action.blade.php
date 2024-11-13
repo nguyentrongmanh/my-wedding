@@ -1,3 +1,10 @@
+@php
+    $invitationRoute = 'javascript:void(0)';
+    if (isset($customer)) {
+        $invitationRoute = route('confirm', ['customer' => $customer->id]);
+    }
+@endphp
+
 <section class="py-4 accessibilities-section">
     <div class="container-fluid">
         <div class="row gx-2 justify-content-center">
@@ -12,7 +19,7 @@
                 </a>
             </div>
             <div class="col-sm-4">
-                <a href="https://preview.iwedding.info/rsvp" target="_blank"
+                <a href="{{ $invitationRoute }}" target="_blank"
                     class="w-100 mb-1 px-2 accessibility-btn btn btn-secondary" data-aos="fade-up">
                     <span class="content-button">
                         <img class="access-section-icon"

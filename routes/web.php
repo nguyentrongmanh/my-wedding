@@ -11,6 +11,8 @@ Route::get('/',
 )->name('home');
 
 Route::get('/invitation/{customer}', [WeddingController::class, 'invitation'])->name('invitation');
+Route::get('/attending/{customer}', [WeddingController::class, 'confirm'])->name('confirm');
+Route::post('/attending/{customer}', [WeddingController::class, 'attendingResponse'])->name('confirm.post');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

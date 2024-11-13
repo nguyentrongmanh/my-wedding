@@ -24,4 +24,20 @@ class WeddingController extends Controller
             'wishes' => $wishes
         ]);
     }
+
+    public function confirm(Request $request, Customer $customer)
+    {
+        return view('attending', [
+            'customer' => $customer
+        ]);
+    }
+
+    public function attendingResponse(Request $request, Customer $customer)
+    {
+        $customer->is_attending = $request->is_attending;
+        $customers = Customer::where('is_attending', true)->get();
+        return view('attending', [
+            'customers' => $customers
+        ]);
+    }
 }

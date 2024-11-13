@@ -15,16 +15,10 @@
     <meta property="og:site_name" content="Nguyễn Trọng Mạnh &amp; Phạm Thị Hiền">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Nguyễn Trọng Mạnh &amp; Phạm Thị Hiền Wedding site!">
-    <meta property="og:url" content="https://preview.iwedding.info">
-    <meta property="og:description"
-        content="Nguyễn Trọng Mạnh &amp; Phạm Thị Hiền - Our wedding date: 2022-12-22 | Điều tuyệt vời nhất mà bạn từng học là yêu và được yêu để đáp lại">
-    <meta property="og:image"
-        content="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/88b6d6c5cb36ccd3725c92f0e0b3d89b.jpeg">
-    <meta property="og:image:url"
-        content="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/88b6d6c5cb36ccd3725c92f0e0b3d89b.jpeg">
-    <meta property="og:image:secure_url"
-        content="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/88b6d6c5cb36ccd3725c92f0e0b3d89b.jpeg">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/wedding/logo.png') }}">
+    <meta property="og:image" content="{{ asset('images/wedding/confirm.png') }}">
+    <meta property="og:image:url" content="{{ asset('images/wedding/confirm.png') }}">
+    <meta property="og:image:secure_url" content="{{ asset('images/wedding/confirm.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/wedding/logo_circle.png') }}">
     <link href="https://fonts.googleapis.com/css2?family=Texturina:opsz,wght@12..72,100&display=swap"
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
@@ -57,7 +51,9 @@
 
         @include('wedding-sections.banner')
 
-        @include('wedding-sections.action')
+        @include('wedding-sections.action', [
+            'customer' => $customer,
+        ])
 
         @include('wedding-sections.bride-and-groom')
 
@@ -261,56 +257,15 @@
                 </div>
         </section>
 
-        <section class="section-title footer-section py-5 text-center section-bg-affect">
-            <div class="container-fluid">
-                <h3 class="title">Thank you!</h3>
-                <h5 class="sub-title">-- Trọng Mạnh & Phạm Hiền --</h5>
-            </div>
-        </section>
+        @include('wedding-sections.thank')
     </div>
 
     @include('wedding-sections.menu')
     @include('wedding-sections.donate-modal')
 
-    <div id="menu-access" class="">
-        <div class="btn-menu-open">
-            <i class="bi bi-list text-white"></i>
-        </div>
-        <div class="btn-menu-close">
-            <i class="bi bi-x-lg text-white"></i>
-        </div>
-        <ul class="p-0 m-0 list-menu-icon">
-            <li class="text-center">
-                <a href="#wishes" class="text-white">
-                    <span class="content-button tooltipBtn">
-                        <span class="tooltiptext">Gửi lời chúc</span>
-                        <img class="access-icon" src="https://cdn.biihappy.com/ziiweb/images/static/common/wishes.png"
-                            alt="">
-                    </span>
-                </a>
-            </li>
-
-            <li class="text-center">
-                <a href="https://preview.iwedding.info/rsvp" target="_blank" class="text-white">
-                    <span class="content-button tooltipBtn">
-                        <span class="tooltiptext">Xác nhận tham dự</span>
-                        <img class="access-icon" src="https://cdn.biihappy.com/ziiweb/images/static/common/rsvp4.png"
-                            alt="">
-                    </span>
-                </a>
-            </li>
-
-            <li class="text-center">
-                <a href="#donate" class="text-white">
-                    <span class="content-button tooltipBtn">
-                        <span class="tooltiptext">Mừng cưới</span>
-                        <img class="access-icon"
-                            src="https://cdn.biihappy.com/ziiweb/images/static/common/money_bag.png" alt="">
-                    </span>
-                </a>
-            </li>
-        </ul>
-    </div>
+    @include('wedding-sections.menu-access', [
+        'customer' => $customer,
+    ])
 
     <script type="text/javascript">
         function parseJsonRecursively(jsonString) {
