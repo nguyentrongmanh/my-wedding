@@ -64,8 +64,7 @@
         <section class="py-5 story-section section-bg-affect" id="story">
             <div class="container-fluid">
                 <h3 data-aos="fade-up" class="section-sub-title mb-4 text-center">
-                    Tình yêu không chỉ là một danh từ - nó là một động từ; nó còn hơn cả một cảm giác - đó là sự quan
-                    tâm, chia sẻ, giúp đỡ, hy sinh.
+                    Sự hiện diện của quý khách là niềm vinh hạnh cho gia đình chúng tôi!
                 </h3>
                 <div class="story-content">
                     <img src="{{ asset('images/wedding/invitation-card-sp.png') }}" class="story-img" alt="story-img">
