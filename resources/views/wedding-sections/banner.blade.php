@@ -14,7 +14,7 @@
         </div>
         <div class="main_image_area pt-4 pb-8" data-aos="fade-up" data-aos-delay="50">
             <div class="main_image">
-                <img src="{{ asset('images/wedding/hero/gallery1.JPG') }}">
+                <img src="{{ asset('images/wedding/hero/image.png') }}">
             </div>
             <img class="bg-title" src="https://preview.iwedding.info/templates/template135/img/main_title.png"
                 alt="" />
