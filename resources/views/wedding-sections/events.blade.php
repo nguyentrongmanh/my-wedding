@@ -90,7 +90,7 @@
                 <a href="#" data-index="3"
                     class="section-sub-title btn btn-sm btn-secondary calendar-button-custom-click">Thêm vào
                     lịch</a>
-                <a href="https://maps.app.goo.gl/tK46smHdZZVkwzaL8"
+                <a href="https://maps.app.goo.gl/cohWReb2db142vru5?g_st=afm"
                     target="_blank" class="section-sub-title btn btn-sm btn-secondary">Xem bản đồ</a>
             </div>
         </div>
@@ -119,7 +119,7 @@
                 <a href="#" data-index="4"
                     class="section-sub-title btn btn-sm btn-secondary calendar-button-custom-click">Thêm vào
                     lịch</a>
-                <a href="https://maps.app.goo.gl/tK46smHdZZVkwzaL8"
+                <a href="https://maps.app.goo.gl/cohWReb2db142vru5?g_st=afm"
                     target="_blank" class="section-sub-title btn btn-sm btn-secondary">Xem bản đồ</a>
             </div>
         </div>

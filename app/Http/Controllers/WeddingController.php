@@ -42,10 +42,10 @@ class WeddingController extends Controller
 
     public function attendingResponse(Request $request, Customer $customer)
     {
-        $customer->is_attending = $request->is_attending;
-        $customers = Customer::where('is_attending', true)->get();
+        $customer->response = $request->confirm;
+        $customer->save();
         return view('attending', [
-            'customers' => $customers
+            'customer' => $customer
         ]);
     }
 }

@@ -9,14 +9,7 @@
     <meta property="og:site_name" content="Nguyễn Trọng Mạnh &amp; Phạm Hiền Wedding site!">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Trọng Mạnh & Phạm Hiền - Xác nhận tham dự" />
-    <meta property="og:url" content="https://preview.iwedding.info/rsvp" />
-    <meta property="og:image"
-        content="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/88b6d6c5cb36ccd3725c92f0e0b3d89b.jpeg" />
-    <meta property="og:image:url"
-        content="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/88b6d6c5cb36ccd3725c92f0e0b3d89b.jpeg" />
-    <meta property="og:image:secure_url"
-        content="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/88b6d6c5cb36ccd3725c92f0e0b3d89b.jpeg" />
-    <link rel="shortcut icon" type="image/x-icon" href="https://iwedding.info/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/wedding/logo_circle.png') }}">
     <link
         href="https://fonts.googleapis.com/css2?family=Coiny&family=Jura:wght@300&family=MonteCarlo&family=Tourney:wght@100&display=swap"
         rel="stylesheet">
@@ -83,24 +76,59 @@
                 src="{{ asset('images/wedding/confirm.png') }}" />
         </div>
         <div>
-            <h2 class="text-center mt-3 mb-0 fs-3 text-uppercase" style="font-family: 'Coiny', cursive;">
-                {{ $customer->name }} ơi, Hãy đến chung vui cùng </h2>
+            @if ($customer->response == 1)
+                <h2 class="text-center mt-3 mb-0 fs-3 text-uppercase" style="font-family: 'Coiny', cursive;">Cám ơn
+                    {{ $customer->name }} đã xác nhận tham dự</h2>
+            @endif
+            @if ($customer->response == 2)
+                <h2 class="text-center mt-3 mb-0 fs-3 text-uppercase" style="font-family: 'Coiny', cursive;">Cả ơn
+                    {{ $customer->name }} đã phản hồi lại</h2>
+            @endif
+            @if ($customer->response == 0)
+                <h2 class="text-center mt-3 mb-0 fs-3 text-uppercase" style="font-family: 'Coiny', cursive;">
+                    {{ $customer->name }} ơi, Hãy đến chung vui cùng </h2>
+            @endif
+
             <p class="text-center mb-0" style="font-family: 'Jura', sans-serif;font-size: 22px;">Đám cưới của</p>
             <div class="d-flex flex-wrap align-items-center justify-content-center">
                 <h1 class="mb-0 fs-4"><span>Trọng Mạnh</span> <img height="50"
                         src="https://preview.iwedding.info/album/heart.gif"> <span>Phạm Hiền</span></h1>
             </div>
+            @if ($customer->response == 1 || $customer->response == 0)
+                <h2 class="text-center mt-3 mb-0 fs-3 text-uppercase" style="font-family: 'Coiny', cursive;">
+                    nha!</h2>
+            @endif
+            @if ($customer->response == 2)
+                <h5 class="text-center mt-3 mb-0 text-uppercase" style="font-family: 'Coiny', cursive;">
+                    Nếu sắp xếp được thời gian, {{ $customer->name }} hãy quay lại để thay đổi xác nhận nhé!</h5>
+            @endif
+
         </div>
     </div>
     <main class="container my-3">
         <div>
-            <form id="free-confirm-form" method="POST" class="">
-                <input type="hidden" value="61990349db8f76231c132068" name="website_id">
-                <button type="submit" value="1" class="btn btn-lg btn-danger text-center w-100 mt-2"
-                    style="font-family: 'Jura', sans-serif;">Xác nhận<small
-                        class="d-block fs-6">Confirm</small></button>
-                <button type="submit" value='0' class="btn btn-lg btn-secondary text-center w-100 mt-2"
-                    style="font-family: 'Jura', sans-serif;">Xin lỗi tôi bận mất rồi :(</button>
+            <form id="free-confirm-form" method="POST" class=""
+                action="{{ route('confirm.post', ['customer' => $customer]) }}">
+
+                @if ($customer->response == 0)
+                    <button type="submit" type="submit" name="confirm" value="1"
+                        class="btn btn-lg btn-danger text-center w-100 mt-2"
+                        style="font-family: 'Jura', sans-serif;">Xác
+                        nhận<small class="d-block fs-6">Confirm</small></button>
+                    <button type="submit" type="submit" name="confirm" value="2"
+                        class="btn btn-lg btn-secondary text-center w-100 mt-2"
+                        style="font-family: 'Jura', sans-serif;">Xin
+                        lỗi tôi bận mất rồi :(</button>
+                @endif
+
+                @if ($customer->response == 2)
+                    <button type="submit" type="submit" name="confirm" value="1"
+                        class="btn btn-lg btn-danger text-center w-100 mt-2"
+                        style="font-family: 'Jura', sans-serif;">Xác
+                        nhận tham dự<small class="d-block fs-6">Confirm</small></button>
+                @endif
+
+
             </form>
         </div>
         <div>
