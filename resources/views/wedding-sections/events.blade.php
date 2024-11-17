@@ -3,10 +3,7 @@
         <h2 data-aos="fade-up" class="section-title text-center">
             Sự Kiện Cưới
         </h2>
-        <h3 data-aos="fade-up" class="section-sub-title mb-4 text-center">
-            Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng tôi!
-        </h3>
-        <div data-aos="flip-right" class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden">
+        {{-- <div data-aos="flip-right" class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden">
             <div class="image-wrap position-relative"
                 style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/45dfd859dd184042e2a6adaa320ac64b.jpeg');">
             </div>
@@ -35,7 +32,7 @@
                 <a href="https://maps.app.goo.gl/HPpcSxwFU5SMmMVAA"
                     target="_blank" class="section-sub-title btn btn-sm btn-secondary">Xem bản đồ</a>
             </div>
-        </div>
+        </div> --}}
         <div data-aos="flip-left " class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden">
             <div class="image-wrap position-relative"
                 style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/8f7155409bf9ebdb9dffd7a38991aaa8.jpeg');">

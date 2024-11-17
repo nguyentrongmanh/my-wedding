@@ -3,10 +3,6 @@
         <h2 class="section-title text-center" data-aos="zoom-in-up">
             Album Hình Cưới
         </h2>
-        <h3 class="section-sub-title mb-4 text-center" data-aos="zoom-in-up">
-            Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho bạn dũng
-            khí.
-        </h3>
         <div class="row gx-2" id="photoGalleryContainer">
             <script type="text/javascript">
                 photoGalleries.push({
@@ -78,6 +74,11 @@
             <div class="col-6 gallery-item section-sub-title mb-2 btn-see-more-gallery" data-aos="fade-left"
                 data-index="5"> <img
                     src="{{ asset('images/wedding/gallerries/image6_small.png') }}" />
+            </div>
+
+            <div class="col-6 gallery-item section-sub-title mb-2 btn-see-more-gallery" data-aos="fade-left"
+                data-index="5"> <img
+                    src="{{ asset('images/wedding/gallerries/image7_small.png') }}" />
             </div>
             <script type="text/javascript">
                 photoGalleries.push({

@@ -17,7 +17,7 @@
                 </div>
                 <div class="d-flex justify-content-center">
                     <span data-aos="fade-left" class="member-name m-0">
-                        Trọng Mạnh /
+                        Nguyễn Trọng Mạnh /
                     </span>
                     <ul data-aos="fade-up" class="member-contact social-links d-flex p-0 m-0 mx-2">
                         <li> <a href="https://facebook.com" target="_blank"> <i class="bi bi-facebook"></i>
@@ -43,7 +43,7 @@
                 </div>
                 <div class="d-flex justify-content-center">
                     <span data-aos="fade-left" class="member-name m-0">
-                        Phạm Hiền /
+                        Phạm Thị Hiền /
                     </span>
                     <ul data-aos="fade-up" class="member-contact social-links d-flex p-0 m-0 mx-2">
                         <li> <a href="https://facebook.com" target="_blank"> <i class="bi bi-facebook"></i>

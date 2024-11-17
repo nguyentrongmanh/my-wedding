@@ -9,10 +9,7 @@
             </div>
             <div>
                 <div data-aos="fade-up" class="invitation-content my-5 text-center sub-title">
-                    Cảm ơn tất cả những người bạn thân yêu của tôi!<br /> Tôi biết các bạn rất bận rộn, bận rộn
-                    với công việc, bận rộn với công việc gia đình…<br /> Nhưng tất cả đã có mặt hôm nay để chúc
-                    mừng tinh yêu và hạnh phúc của chúng
-                    tôi.<br /> Một lần nữa chân thành cảm ơn tất cả các bạn!
+                   Chúng mình biết bạn rất bận rộn<br /> Nhưng thực sự sẽ rất tuyệt vời nếu như ngày Hạnh Phúc của chúng mình có sự hiện diện của bạn.
                 </div>
                 <div data-aos="fade-up" class="couple-img mb-5">
                     <img

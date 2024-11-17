@@ -3,12 +3,12 @@
         <div class="day_wrapper" data-aos="fade-up" data-aos-delay="500">
             <div class="day_area p-1 text-center">
                 <div class="section-sub-title d-flex day_area_inner text-center p-2 py-3">
-                    <p class="m-0 we"> Chúng tôi</p>
+                    <p class="m-0 we"> </p>
                     <div class="wrap-text">
                         <p class="day m-0">08</p>
                         <p class="month m-0">12</p>
                     </div>
-                    <p class="m-0">Sắp kết hôn.</p>
+                    <p class="m-0">Chúng tôi sắp kết hôn.</p>
                 </div>
             </div>
         </div>

@@ -16,6 +16,14 @@ class WeddingController extends Controller
         ]);
     }
 
+    public function brideInvitation(Request $request)
+    {
+        $wishes = Wish::all();
+        return view('bride-invitation', [
+            'wishes' => $wishes
+        ]);
+    }
+
     public function invitation(Request $request, Customer $customer)
     {
         $wishes = Wish::orderBy('created_at', 'desc')->get();

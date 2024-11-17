@@ -33,7 +33,7 @@
 }
 
 body {
-    background-color: #eebaba !important;
+    background-color: #f0c4c4 !important;
 }
 
 button#btn-submit-comment {
@@ -57,3 +57,77 @@ button#btn-submit-comment {
     background-image: url('../images/wedding/wedding_event_background.JPG');
     background-size: cover;
 } */
+
+
+.couple-section {
+    background-image: url('../images/wedding/background/couple.png');
+    background-size: cover;
+    background-origin: border-box;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.gallery-section {
+    background-image: url('../images/wedding/background/couple.png');
+    background-size: cover;
+    background-origin: border-box;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.video-section {
+    background-image: url('../images/wedding/background/videos.png');
+    background-size: cover;
+    background-origin: border-box;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.weddingdate-section {
+    background-image: url('../images/wedding/background/calendar.png');
+    background-size: cover;
+    background-origin: border-box;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.event-section {
+    background-image: url('../images/wedding/background/calendar.png');
+    background-size: cover;
+    background-origin: border-box;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.footer-section {
+    background-image: url('../images/wedding/background/thank.png');
+    background-size: cover;
+    background-origin: border-box;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.footer-section .title {
+    color: #fff ;
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 5rem;
+}
+
+.main_image_area .bg-title {
+    bottom: 102px !important;
+}
+
+.main_image_area .wrap-name {
+    color: #cb3e19 !important;
+}

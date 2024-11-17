@@ -10,6 +10,10 @@ Route::get('/',
     [WeddingController::class, 'index']
 )->name('home');
 
+Route::get('/bride-invitation',
+    [WeddingController::class, 'brideInvitation']
+)->name('bride-home');
+
 Route::get('/invitation/{customer}', [WeddingController::class, 'invitation'])->name('invitation');
 Route::get('/attending/{customer}', [WeddingController::class, 'confirm'])->name('confirm');
 Route::post('/attending/{customer}', [WeddingController::class, 'attendingResponse'])->name('confirm.post');
@@ -17,6 +21,10 @@ Route::post('/attending/{customer}', [WeddingController::class, 'attendingRespon
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/welcome', function () {
+    return view('welcome');
+})->name('welcome');
 
 Route::resource('wish', WishController::class);
 

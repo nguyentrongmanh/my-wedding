@@ -93,7 +93,7 @@
                 <div id="section-comment">
                     <form action="" id="wish-form" class="p-4 contact-validation-active">
                         <div class="col-auto mb-3 d-flex">
-                            <div class="w-100 me-2">
+                            <div class="w-100">
                                 <input name="name" id="name-comment" type="text" class="form-control border-0"
                                     placeholder="Nhập tên của bạn*" />
                             </div>

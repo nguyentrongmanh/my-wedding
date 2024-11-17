@@ -3,9 +3,6 @@
         <h2 class="section-title text-center" data-aos="fade-up">
             Video Cưới
         </h2>
-        <h3 class="section-sub-title mb-4 text-center" data-aos="fade-up">
-            Tình yêu không làm cho thế giới quay tròn.
-        </h3>
         <div class="ratio ratio-16x9" data-aos="zoom-in">
             <iframe width="100%" src="https://www.youtube.com/embed/lGUdD29BDMg"
                 title="YouTube video player" frameborder="0"
