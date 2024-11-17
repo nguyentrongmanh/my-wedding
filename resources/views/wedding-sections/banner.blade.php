@@ -19,7 +19,7 @@
             <img class="bg-title" src="https://preview.iwedding.info/templates/template135/img/main_title.png"
                 alt="" />
             <div class="wrap-name pt-7 px-5 title">
-                Trọng Mạnh <small>&amp;</small> Phạm Hiền
+                <img src="{{ asset('images/wedding/hero/name.png') }}" alt="" />
             </div>
         </div>
     </div>

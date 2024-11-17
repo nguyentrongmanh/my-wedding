@@ -17,18 +17,8 @@
                 </div>
                 <div class="d-flex justify-content-center">
                     <span data-aos="fade-left" class="member-name m-0">
-                        Nguyễn Trọng Mạnh /
+                        Nguyễn Trọng Mạnh
                     </span>
-                    <ul data-aos="fade-up" class="member-contact social-links d-flex p-0 m-0 mx-2">
-                        <li> <a href="https://facebook.com" target="_blank"> <i class="bi bi-facebook"></i>
-                            </a> </li>
-
-                        <li> <a href="https://twitter.com" target="_blank"> <i class="bi bi-twitter"></i>
-                            </a> </li>
-
-                        <li> <a href="https://instagram.com" target="_blank"> <i class="bi bi-instagram"></i>
-                            </a> </li>
-                    </ul>
                 </div>
             </div>
             <div class="member member-bride mt-5">
@@ -43,20 +33,8 @@
                 </div>
                 <div class="d-flex justify-content-center">
                     <span data-aos="fade-left" class="member-name m-0">
-                        Phạm Thị Hiền /
+                        Phạm Thị Hiền
                     </span>
-                    <ul data-aos="fade-up" class="member-contact social-links d-flex p-0 m-0 mx-2">
-                        <li> <a href="https://facebook.com" target="_blank"> <i class="bi bi-facebook"></i>
-                            </a> </li>
-
-
-                        <li> <a href="https://twitter.com" target="_blank"> <i class="bi bi-twitter"></i>
-                            </a> </li>
-
-
-                        <li> <a href="https://instagram.com" target="_blank"> <i class="bi bi-instagram"></i>
-                            </a> </li>
-                    </ul>
                 </div>
             </div>
         </div>
