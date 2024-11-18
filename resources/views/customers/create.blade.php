@@ -54,14 +54,37 @@
                 @enderror
             </div>
 
+            <!-- Note Field -->
+            <div class="mb-4">
+                <label for="note" class="block text-gray-700 text-sm font-bold mb-2">Note:</label>
+                <textarea name="note" id="note" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring" rows="5" cols="30">{{ old('note') }}</textarea>
+                @error('note')
+                <span class="text-red-500 text-sm">{{ $message }}</span>
+                @enderror
+            </div>
+
+            <!-- Response Field (Dropdown) -->
+            <div class="mb-4">
+                <label for="friend_of" class="block text-gray-700 text-sm font-bold mb-2">Friend Of:</label>
+                <select name="friend_of" id="friend_of" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring">
+                    <option value="">Select Response</option>
+                    <option value="1" {{ old('friend_of') == 1 ? 'selected' : '' }}>Chú rể</option>
+                    <option value="2" {{ old('friend_of') == 2 ? 'selected' : '' }}>Cô dâu</option>
+                    <option value="3" {{ old('friend_of') == 3 ? 'selected' : '' }}>Bố mẹ</option>
+                </select>
+                @error('friend_of')
+                <span class="text-red-500 text-sm">{{ $message }}</span>
+                @enderror
+            </div>
+
             <!-- Response Field (Dropdown) -->
             <div class="mb-4">
                 <label for="response" class="block text-gray-700 text-sm font-bold mb-2">Response:</label>
                 <select name="response" id="response" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring">
                     <option value="">Select Response</option>
-                    <option value="NOT ANSWER YET" {{ old('response') == 'NOT ANSWER YET' ? 'selected' : '' }}>NOT ANSWER YET</option>
-                    <option value="JOIN" {{ old('response') == 'JOIN' ? 'selected' : '' }}>JOIN</option>
-                    <option value="NOT JOIN" {{ old('response') == 'NOT JOIN' ? 'selected' : '' }}>NOT JOIN</option>
+                    <option value="0" {{ old('response') == 0 ? 'selected' : '' }}>NOT ANSWER YET</option>
+                    <option value="1" {{ old('response') == 1 ? 'selected' : '' }}>JOIN</option>
+                    <option value="2" {{ old('response') == 2 ? 'selected' : '' }}>NOT JOIN</option>
                 </select>
                 @error('response')
                 <span class="text-red-500 text-sm">{{ $message }}</span>

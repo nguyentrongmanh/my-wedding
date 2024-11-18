@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Enums\CustomerResponse;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -33,6 +34,14 @@ class Customer extends Model
     public function getInvitationUrlAttribute()
     {
         return route('invitation', $this->id);
+    }
+
+    public function getResponseTextAttribute()
+    {
+        if ($this->response === null) {
+            return null;
+        }
+        return CustomerResponse::getDescription($this->response);
     }
 }
 

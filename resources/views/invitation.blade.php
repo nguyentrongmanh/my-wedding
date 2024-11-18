@@ -66,8 +66,13 @@
                     @if ($customer->friend_of == 2)
                         <img src="{{ asset('images/wedding/invitation-card-sp-bride.png') }}" class="story-img"
                             alt="story-img">
-                    @else
-                        <img src="{{ asset('images/wedding/invitation-card-sp.png') }}" class="story-img"
+                    @endif
+                    @if ($customer->friend_of == 3)
+                        <img src="{{ asset('images/wedding/invitation-card-sp-parent1.png') }}" class="story-img"
+                            alt="story-img">
+                    @endif
+                    @if ($customer->friend_of == 1 || $customer->friend_of == null || $customer->friend_of == 0)
+                        <img src="{{ asset('images/wedding/invitation-card-sp-bride.png') }}" class="story-img"
                             alt="story-img">
                     @endif
                     <div class="guest">{{ $customer->display_name }}</div>
