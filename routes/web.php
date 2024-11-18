@@ -19,7 +19,7 @@ Route::get('/attending/{customer}', [WeddingController::class, 'confirm'])->name
 Route::post('/attending/{customer}', [WeddingController::class, 'attendingResponse'])->name('confirm.post');
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return redirect()->route('customers.index');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/welcome', function () {

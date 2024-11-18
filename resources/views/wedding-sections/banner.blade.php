@@ -12,7 +12,7 @@
                 </div>
             </div>
         </div>
-        <div class="main_image_area pt-4 pb-8" data-aos="fade-up" data-aos-delay="50">
+        <div class="main_image_area pt-4 pb-4" data-aos="fade-up" data-aos-delay="50">
             <div class="main_image">
                 <img src="{{ asset('images/wedding/hero/image.png') }}">
             </div>

@@ -15,7 +15,6 @@ class CustomersImport implements ToModel, WithHeadingRow
     */
     public function model(array $row)
     {
-        \Log::info($row);
         return Customer::create(
             [
                 'name' => $row['name'],
