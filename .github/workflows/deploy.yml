@@ -25,3 +25,10 @@ jobs:
           SCRIPT_AFTER: |
             whoami
             ls -al
+            php artisan migrate
+            php artisan config:clearn
+            php artisan cache:clear
+            php artisan route:clear
+            php artisan view:clear
+            php artisan optimize
+            
