@@ -10,6 +10,10 @@ Route::get('/',
     [WeddingController::class, 'index']
 )->name('home');
 
+Route::get('/parent',
+    [WeddingController::class, 'parent']
+)->name('parent');
+
 Route::get('/bride-invitation',
     [WeddingController::class, 'brideInvitation']
 )->name('bride-home');

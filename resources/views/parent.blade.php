@@ -15,9 +15,12 @@
     <meta property="og:site_name" content="Nguyễn Trọng Mạnh &amp; Phạm Thị Hiền">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Nguyễn Trọng Mạnh &amp; Phạm Thị Hiền Wedding site!">
-    <meta property="og:image" content="{{ asset('images/wedding/confirm.png') }}">
-    <meta property="og:image:url" content="{{ asset('images/wedding/confirm.png') }}">
-    <meta property="og:image:secure_url" content="{{ asset('images/wedding/confirm.png') }}">
+    <meta property="og:image"
+        content="{{ asset('images/wedding/confirm.png') }}">
+    <meta property="og:image:url"
+        content="{{ asset('images/wedding/confirm.png') }}">
+    <meta property="og:image:secure_url"
+        content="{{ asset('images/wedding/confirm.png') }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/wedding/logo_circle.png') }}">
     <link href="https://fonts.googleapis.com/css2?family=Texturina:opsz,wght@12..72,100&display=swap"
         rel="stylesheet" />
@@ -51,9 +54,7 @@
 
         @include('wedding-sections.banner')
 
-        @include('wedding-sections.action', [
-            'customer' => $customer,
-        ])
+        @include('wedding-sections.action')
 
         @include('wedding-sections.bride-and-groom')
 
@@ -63,19 +64,8 @@
                     Sự hiện diện của quý khách là niềm vinh hạnh cho gia đình chúng tôi!
                 </h3>
                 <div class="story-content">
-                    @if ($customer->friend_of == 2)
-                        <img src="{{ asset('images/wedding/invitation-card-sp-bride.png') }}" class="story-img"
-                            alt="story-img">
-                    @endif
-                    @if ($customer->friend_of == 3)
-                        <img src="{{ asset('images/wedding/invitation-card-sp-parent1.png') }}" class="story-img"
-                            alt="story-img">
-                    @endif
-                    @if ($customer->friend_of == 1 || $customer->friend_of == null || $customer->friend_of == 0)
-                        <img src="{{ asset('images/wedding/invitation-card-sp-bride.png') }}" class="story-img"
-                            alt="story-img">
-                    @endif
-                    <div class="guest">{{ $customer->display_name }}</div>
+                    <img src="{{ asset('images/wedding/invitation-card-sp-parent1.png') }}" class="story-img" alt="story-img">
+                    <div class="guest">QUÝ KHÁCH</div>
                 </div>
             </div>
         </section>
@@ -86,9 +76,31 @@
 
         @include('wedding-sections.calendar')
 
-        @include('wedding-sections.invitation', [
-            'customer' => $customer,
-        ])
+        <section class="py-5 invitation-section section-bg-affect" id="invitation">
+            <div class="container-fluid">
+                <div class="w-100">
+                    <div data-aos="fade-up" class="invation-title">
+                        <h3 class="text-center title m-0">Lời Ngỏ</h3>
+                        <p class="text-center m-0">
+        
+                        </p>
+                    </div>
+                    <div>
+                        <div data-aos="fade-up" class="invitation-content my-5 text-center sub-title">
+                           Chúng mình biết bạn rất bận rộn<br /> Nhưng thực sự sẽ rất tuyệt vời nếu như <br /> ngày Hạnh Phúc của con chúng mình <br /> có sự hiện diện của bạn.
+                        </div>
+                        <div data-aos="fade-up" class="couple-img mb-5">
+                            <img
+                                src="{{ asset('images/wedding/invitation.png') }}">
+                        </div>
+                        <div data-aos="fade-up" class="section-title invitation-couple text-center my-5 fs-4">
+                            <p>*Groom/<span> Trọng Mạnh</span></p>
+                            <p>*Bride/<span> Phạm Hiền</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         @include('wedding-sections.events')
 
@@ -99,37 +111,18 @@
                 <h2 data-aos="fade-up" class="section-title text-center">
                     Sổ Lưu Bút
                 </h2>
-
-                @if ($customer->friend_of == 3)
-                    <h3 data-aos="fade-up" class="section-sub-title mb-4 text-center">
-                        Hãy để lại những lời chúc tốt đẹp nhất đến đám cưới của hai con chúng tôi nhé!
-                        &#10084;
-                    </h3>
-                @else
-                    <h3 data-aos="fade-up" class="section-sub-title mb-4 text-center">
-                        {{ $customer->name }} ơi, hãy gửi những lời chúc mừng <br> tốt đẹp nhất đến đám cưới của <br>Mạnh & Hiền
-                        nhé
-                        &#10084;
-                    </h3>
-                @endif
+                <h3 data-aos="fade-up" class="section-sub-title mb-4 text-center">
+                    Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng tôi!
+                </h3>
                 <div id="section-comment">
                     <form action="" id="wish-form" class="p-4 contact-validation-active">
-                        @if ($customer->friend_of == 3)
-                            <div class="col-auto mb-3 d-flex">
-                                <div class="w-100">
-                                    <input name="name" id="name-comment" type="text" class="form-control border-0"
-                                        placeholder="Nhập tên của bạn*" />
-                                </div>
+                        <div class="col-auto mb-3 d-flex">
+                            <div class="w-100">
+                                <input name="name" id="name-comment" type="text" class="form-control border-0"
+                                    placeholder="Nhập tên của bạn*" />
                             </div>
-                        @else
-                            <div class="col-auto mb-3 d-flex">
-                                <div class="w-100">
-                                    <input name="name" id="name-comment" type="text" value="{{ $customer->display_name }}" class="form-control border-0"
-                                        placeholder="Nhập tên của bạn*" />
-                                </div>
-                            </div>
-                            <input name="email" id="email-comment" type="hidden" />
-                        @endif
+                            <input name="email" id="email-comment" type="hidden"/>
+                        </div>
                         <div class="col-auto mb-3">
                             <div class="textarea-emoji-picker position-relative">
                                 <div class="vitualTextarea form-control px-0">
@@ -283,11 +276,10 @@
     </div>
 
     @include('wedding-sections.menu')
+
     @include('wedding-sections.donate-modal')
 
-    @include('wedding-sections.menu-access', [
-        'customer' => $customer,
-    ])
+    @include('wedding-sections.menu-access')
 
     <script type="text/javascript">
         function parseJsonRecursively(jsonString) {
@@ -311,7 +303,7 @@
     <script src="https://preview.iwedding.info/common/calendar.js?v=20241021"></script>
     <script src="https://preview.iwedding.info/common/biicommon.min.js?v=20241021"></script>
     <script src="https://preview.iwedding.info/templates/template135/js/libs.js"></script>
-    <script src="{{ asset('js/script.js') }}"></script>
+    <script src="https://preview.iwedding.info/templates/template135/js/script.js"></script>
     <script src="https://preview.iwedding.info/common/emoji-picker/js/insertTextAtCursor.js?v=20241021"></script>
     <script type="module" src="https://preview.iwedding.info/common/emoji-picker/js/init.js?v=20241021"></script>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">

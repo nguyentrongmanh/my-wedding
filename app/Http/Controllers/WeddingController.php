@@ -16,6 +16,14 @@ class WeddingController extends Controller
         ]);
     }
 
+    public function parent()
+    {
+        $wishes = Wish::all();
+        return view('parent', [
+            'wishes' => $wishes
+        ]);
+    }
+
     public function brideInvitation(Request $request)
     {
         $wishes = Wish::all();

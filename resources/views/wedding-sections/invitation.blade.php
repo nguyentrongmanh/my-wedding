@@ -1,3 +1,9 @@
+@php
+    $pronouce = 'chúng mình';
+    if (isset($customer) && $customer->friend_of == 3) {
+        $pronouce = 'con chúng mình';
+    }
+@endphp
 <section class="py-5 invitation-section section-bg-affect" id="invitation">
     <div class="container-fluid">
         <div class="w-100">
@@ -9,7 +15,7 @@
             </div>
             <div>
                 <div data-aos="fade-up" class="invitation-content my-5 text-center sub-title">
-                   Chúng mình biết bạn rất bận rộn<br /> Nhưng thực sự sẽ rất tuyệt vời nếu như ngày Hạnh Phúc của chúng mình có sự hiện diện của bạn.
+                   Chúng mình biết bạn rất bận rộn<br /> Nhưng thực sự sẽ rất tuyệt vời nếu như <br /> ngày Hạnh Phúc của {{ $pronouce }} <br /> có sự hiện diện của bạn.
                 </div>
                 <div data-aos="fade-up" class="couple-img mb-5">
                     <img

@@ -41,11 +41,9 @@
             rules: {
                 name: {
                     required: true,
-                    minlength: 5
                 },
                 content: {
-                    required: true,
-                    minlength: 10
+                    required: true
                 },
                 email: {
                     required: false,
@@ -62,15 +60,10 @@
             },
             messages: {
                 name: {
-                    required: '<span style="color:red;">Vui lÃ²ng nháº­p tÃªn cá»§a báº¡n.</span>',
-                    minlength: '<span style="color:red;">TÃªn pháº£i lá»›n hÆ¡n 5 kÃ½ tá»±.</span>',
+                    required: '<span style="color:red;">Vui lòng nhập tên để gửi lời chúc.</span>'
                 },
                 content: {
-                    required: '<span style="color:red;">Vui lÃ²ng nháº­p lá»i chÃºc.</span>',
-                    minlength: '<span style="color:red;">Lá»i chÃºc pháº£i lá»›n hÆ¡n 10 kÃ½ tá»±.</span>',
-                },
-                email: {
-                    email: '<span style="color:red;">Äá»‹a chá»‰ email khÃ´ng há»£p lá»‡.</span>'
+                    required: '<span style="color:red;">Vui lòng nhập nội dung để gửi lời chúc.</span>',
                 }
             },
 
