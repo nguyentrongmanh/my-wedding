@@ -55,6 +55,15 @@
                 @enderror
             </div>
 
+            <!-- Address Field -->
+            <div class="mb-4">
+                <label for="note" class="block text-gray-700 text-sm font-bold mb-2">Note:</label>
+                <textarea name="note" id="note" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring" rows="5" cols="30">{{ old('note', $customer->note) }}</textarea>
+                @error('note')
+                <span class="text-red-500 text-sm">{{ $message }}</span>
+                @enderror
+            </div>
+
             <!-- Response Field -->
             <div class="mb-4">
                 <label for="response" class="block text-gray-700 text-sm font-bold mb-2">Response:</label>

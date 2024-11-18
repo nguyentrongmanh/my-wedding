@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('address')->nullable();
             $table->string('nickname')->nullable();
             $table->tinyInteger('response')->nullable()->default(0);
+            $table->text('note')->nullable();
             $table->tinyInteger('friend_of')->nullable()->default(1);
             $table->timestamps();
         });

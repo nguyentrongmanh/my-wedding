@@ -20,6 +20,8 @@ class Customer extends Model
         'phone',
         'address',
         'nickname',
+        'note',
+        'response',
     ];
 
     public function getDisplayNameAttribute()
