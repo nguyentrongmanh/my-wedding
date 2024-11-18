@@ -63,7 +63,13 @@
                     Sự hiện diện của quý khách là niềm vinh hạnh cho gia đình chúng tôi!
                 </h3>
                 <div class="story-content">
-                    <img src="{{ asset('images/wedding/invitation-card-sp.png') }}" class="story-img" alt="story-img">
+                    @if ($customer->friend_of == 2)
+                        <img src="{{ asset('images/wedding/invitation-card-sp-bride.png') }}" class="story-img"
+                            alt="story-img">
+                    @else
+                        <img src="{{ asset('images/wedding/invitation-card-sp.png') }}" class="story-img"
+                            alt="story-img">
+                    @endif
                     <div class="guest">{{ $customer->display_name }}</div>
                 </div>
             </div>
@@ -233,18 +239,6 @@
                         </div>
                     </form>
                     <div class="mt-3 px-4 py-3 " id="show-comments">
-                        <div class="box-comment pb-3">
-                            <h4 id="user-name-comment" class="mt-1">Anh Trọng thoát vị đĩa đệm</h4>
-                            <p id="comment-detail" class="m-0">
-                                Chúc cho hai bạn sẽ có được một cuộc hôn nhân viên mãn, trăm năm hạnh
-                            </p>
-                        </div>
-                        <div class="box-comment pb-3">
-                            <h4 id="user-name-comment" class="mt-1">Bạn Vân vẫn độc thân</h4>
-                            <p id="comment-detail" class="m-0">
-                                Một cuộc hôn nhân thành công đòi hỏi phải yêu nhiều lần
-                            </p>
-                        </div>
                         @foreach ($wishes as $wish)
                             <div class="box-comment pb-3">
                                 <h4 id="user-name-comment" class="mt-1">{{ $wish->name }}</h4>

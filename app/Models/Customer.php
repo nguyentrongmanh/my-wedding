@@ -22,6 +22,7 @@ class Customer extends Model
         'nickname',
         'note',
         'response',
+        'friend_of',
     ];
 
     public function getDisplayNameAttribute()
