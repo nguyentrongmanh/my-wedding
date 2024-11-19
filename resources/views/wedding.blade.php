@@ -4,14 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Nguyễn Trọng Mạnh &amp; Phạm Thị Hiền Wedding site!</title>
+    <title>Nguyễn Trọng Mạnh &amp; Phạm Thị Hiền Wedding!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
         content="Nguyễn Trọng Mạnh &amp; Phạm Thị Hiền - Our wedding date: 2024-12-08 | Điều tuyệt vời nhất mà bạn từng học là yêu và được yêu để đáp lại">
     <meta name="keywords" content="Wedding,Nguyễn Trọng Mạnh,Phạm Thị Hiền,Wedding website, Website đám cưới">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="application-name" content="iWedding">
-    <meta name="author" content="Biihappy.com">
     <meta property="og:site_name" content="Nguyễn Trọng Mạnh &amp; Phạm Thị Hiền">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Nguyễn Trọng Mạnh &amp; Phạm Thị Hiền Wedding site!">
