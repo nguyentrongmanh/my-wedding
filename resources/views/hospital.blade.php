@@ -92,7 +92,7 @@
                     <div>
                         <div data-aos="fade-up" class="invitation-content my-5 text-center sub-title">
                             Em biết anh chị em rất bận rộn<br /> Nhưng thực sự sẽ rất tuyệt vời nếu như <br /> ngày
-                            Hạnh Phúc của chúng em <br /> có sự hiện diện của anh chị.
+                            Hạnh Phúc của chúng em <br /> có sự hiện diện của mọi người.
                         </div>
                         <div data-aos="fade-up" class="couple-img mb-5">
                             <img src="{{ asset('images/wedding/invitation.png') }}">
